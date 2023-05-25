@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.peerless2012.rpc.api;
+
+import com.peerless2012.rpc.entity.HelloRequest;
+import com.peerless2012.rpc.entity.HelloReply;
+
+service HelloApi {
+
+    rpc sayHello(HelloRequest) returns (HelloReply);
+
+}

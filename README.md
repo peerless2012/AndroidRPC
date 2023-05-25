@@ -11,6 +11,8 @@ RPC on Android use grpc and protobuf.
 * [Avro](https://avro.apache.org/)
 * [Finagle](https://twitter.github.io/finagle/)
 * [hessian](http://hessian.caucho.com/)
+* [librpc](https://github.com/wypx/librpc)
+* [bzip2-rpc](https://github.com/google/bzip2-rpc)
 
 ## guide
 * [grpc on Android](https://grpc.io/docs/platforms/android/java/quickstart/)
@@ -18,3 +20,5 @@ RPC on Android use grpc and protobuf.
 ## refer
 * [Build client-server applications with gRPC](https://developer.android.com/guide/topics/connectivity/grpc)
 * [Protobuf-gRPC-Android](https://github.com/xuexiangjys/Protobuf-gRPC-Android)
+* [gRPC server for Android](https://stackoverflow.com/questions/65781232/grpc-server-for-android)
+* [gRPC C++ server on Android](https://github.com/grpc/grpc/tree/master/examples/android/helloworld)
