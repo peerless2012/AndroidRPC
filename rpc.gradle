@@ -1,0 +1,45 @@
+android {
+
+    sourceSets {
+        main {
+            proto {
+                srcDir '../proto'
+            }
+        }
+    }
+
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.22.3'
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.55.1'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java {
+                    option 'lite'
+                }
+            }
+            task.plugins {
+                grpc {
+                    // Options added to --grpc_out
+                    option 'lite'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.protobuf:protobuf-javalite:3.23.1'
+    implementation 'io.grpc:grpc-okhttp:1.55.1'
+    implementation 'io.grpc:grpc-protobuf-lite:1.55.1'
+    implementation 'io.grpc:grpc-stub:1.55.1'
+    implementation 'org.apache.tomcat:annotations-api:6.0.53'
+}

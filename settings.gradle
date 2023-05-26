@@ -13,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidRPC"
-include ':client'
+include ':app-client'
+include ':app-server'
